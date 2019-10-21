@@ -37,7 +37,7 @@ public class RoboAlpha16323Main extends LinearOpMode {
         final double MAX_POS = 1.0;     // Maximum rotational position
         final double MIN_POS = 0.0;     // Minimum rotational position
         double INCREMENT = (double) 1 / 90;
-        double position = 0.5;
+        double position = 1;
         double gripperPos = 0;
         boolean isPositionChanged = false;
         // Declaring DriveTrain variables
