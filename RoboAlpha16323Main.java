@@ -9,7 +9,7 @@ import com.qualcomm.robotcore.util.Range;
 import com.qualcomm.robotcore.hardware.DigitalChannel;
 
 @TeleOp(name="RoboAlpha", group="Motor Drive")
-public class RALPHA16323MLSSA extends LinearOpMode {
+public class RoboAlpha16323Main extends LinearOpMode {
 
     //Declaring the DcMotor
     private ElapsedTime runtime = new ElapsedTime();
