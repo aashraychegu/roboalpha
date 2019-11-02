@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 import com.qualcomm.robotcore.hardware.DigitalChannel;
 
-@TeleOp(name="RoboAlpha", group="Motor Drive")
+@TeleOp(name="RoboAlpha16323Main", group="Motor Drive")
 public class RoboAlpha16323Main extends LinearOpMode {
 
     //Declaring the DcMotor
@@ -101,7 +101,7 @@ public class RoboAlpha16323Main extends LinearOpMode {
             }
             else if (gamepad1.right_bumper == true)
             {
-                 speedMod = 0.3;
+                speedMod = 0.3;
             }
             else {
                 speedMod = 1.0;
@@ -114,13 +114,14 @@ public class RoboAlpha16323Main extends LinearOpMode {
                 slideMotor.setPower(0);
             }
             else
-                {
+            {
                 telemetry.addData("DigitalTouch", "You can keep going down - Elevation = (%.2f)",elevation);
                 // power for liner slide
                 slidePower = Range.clip(elevation, -1.0, 1.0);
                 //Send Power to Slide Motor;
                 slideMotor.setPower(slidePower);
             }
+            telemetry.addData("Elevation","(%.2f)",elevation);
             telemetry.update();
 
 
